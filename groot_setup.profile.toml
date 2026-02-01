@@ -1,0 +1,28 @@
+# dR4ko - Glassroot Setup Profile
+# Installation scripts for Demo 1 and Demo 2 tools.
+
+# ┌─ Profile Settings ───────────────────────────────────────┐
+x = 2
+y = 1
+header_art = '''
+🛠️ Setup Center
+'''
+
+#==========================================
+# ┌─ Setup Commands ───────────────────────┐
+# └────────────────────────────────────────┘
+[[commands]]
+name = "📦 Install Demo 1 (APT)"
+description = "Installs packages for Demo 1: bastet, cmatrix, sl, moon-buggy, fortune, cowsay, fastfetch, etc."
+command = "sudo apt update && sudo apt install -y bastet cmatrix telnet bmon sl moon-buggy fortune-mod cowsay fastfetch curl"
+auto_close_execution = false
+col = "A"
+row = 0
+
+[[commands]]
+name = "🐹 Install Demo 2 (Go)"
+description = "Installs Go-based tools for Demo 2: nachrichten, slides, and pomo."
+command = "go install github.com/zMoooooritz/nachrichten@latest && go install github.com/maaslalani/slides@latest && go install github.com/Bahaaio/pomo@latest"
+auto_close_execution = false
+col = "B"
+row = 0

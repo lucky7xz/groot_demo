@@ -1,0 +1,110 @@
+# dR4ko - Glassroot Demo Profile
+
+# ┌─ Profile Settings ───────────────────────────────────────┐
+x = 3
+y = 3
+header_art = '''
+🧊 Glassroot Access
+'''
+
+#==========================================
+# ┌─ Column 0: Oldschool Visuals ──────────┐
+# └────────────────────────────────────────┘
+
+[[commands]]
+name = "🎬 Star Wars"
+description = "Watch Star Wars Episode IV in ASCII art via Telnet."
+command = "telnet starwarstel.net"
+col = "A"
+row = 0
+
+[[commands]]
+name = "🐮 Cow Wisdom"
+description = "Random fortune cookies delivered by a cow. The pinnacle of Unix culture."
+command = "fortune | cowsay"
+auto_close_execution = false
+col = "A"
+row = 1
+
+[[commands]]
+name = "🗺️  MapSCII"
+description = "A braille and ASCII world map renderer. Zoom in and out using mouse or keyboard. Connects to telnet mapscii.me."
+command = "telnet mapscii.me"
+col = "A"
+row = 2
+
+#==========================================
+# ┌─ Column 1: Build in Go ────────────────┐
+# └────────────────────────────────────────┘
+
+[[commands]]
+name = "🍅 Pomo Timer"
+description = "A simple Pomodoro timer set for 5 seconds. (Source: github.com/Bahaaio/pomo)"
+command = "pomo 5s"
+col = "B"
+row = 0
+
+[[commands]]
+name = "📰 Nachrichten"
+description = "A CLI news reader (in German). (Source: github.com/zMoooooritz/nachrichten)"
+command = "nachrichten"
+col = "B"
+row = 1
+
+[[commands]]
+name = " 📊 Slides"
+description = "A terminal based presentation tool. (Source: github.com/maaslalani/slides)"
+command = "slides"
+col = "B"
+row = 2
+
+#==========================================
+# ┌─ Column 2: Toys and Tests ─────────────┐
+# └────────────────────────────────────────┘
+
+[[commands]]
+name = "🧱 Bastet"
+description = "Bastard Tetris. It knows what piece you need and gives you the worst possible one instead. Good luck."
+command = "bastet"
+col = "C"
+row = 0
+
+[[commands]]
+name = "🛢️  System Information"
+description = "Displays system information with visual flair using Fastfetch. Purely read-only system stats."
+command = "fastfetch 2>/dev/null || neofetch"
+auto_close_execution = false
+col = "C"
+row = 1
+
+[[commands]]
+name = " 📦 Update this system. I don't care.."
+description = "Update my system. I mean, why not? Just do it. You are not only allowed, you are encouraged to do so! Why you think it says root down there? Wait, you never updated a strangers system before?! Wat?!"
+command = "sudo apt update && sudo apt upgrade"
+auto_close_execution = false
+col = "C"
+row = 2
+
+
+#[[commands]]
+#name = "💊 Matrix Rain"
+#description = "The classic digital rain screensaver. Safe, hypnotic, and makes the terminal look busy. Press 'q' to exit."
+#command = "cmatrix -b"
+#col = "A"
+#row = 1
+
+#[[commands]]
+#name = "� Steam Train"
+#description = "All aboard! A steam locomotive travels across your screen. Choo choo!"
+#command = "sl -l"
+#col = "C"
+#row = 0
+
+#[[commands]]
+#name = "🌝 Moon Buggy"
+#description = "Drive a car on the moon across craters. A simple, addictive side-scroller. Space to jump, 'a'/'l' to shoot."
+#command = "moon-buggy"
+#col = "B"
+#row = 0
+
+
