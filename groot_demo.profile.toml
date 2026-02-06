@@ -28,7 +28,7 @@ row = 1
 
 [[commands]]
 name = "🗺️  MapSCII"
-description = "A braille and ASCII world map renderer. Zoom in and out using mouse or keyboard. Connects to telnet mapscii.me."
+description = "An ASCII world map renderer. Zoom in and out using mouse or keyboard. Connects to telnet mapscii.me."
 command = "telnet mapscii.me"
 col = "A"
 row = 2
