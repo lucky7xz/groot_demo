@@ -108,7 +108,7 @@ row = 3
 [[commands]]
 name = "📑 tabiew"
 description = "A lightweight TUI to view and query CSV/TSV files. (Source: github.com/shshemi/tabiew)"
-command = "tw assets/groot_demo/synth_data.csv"
+command = "tw /root/.config/drako/assets/groot_demo/synth_data.csv"
 col = "C"
 row = 3
 
