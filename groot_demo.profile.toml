@@ -80,10 +80,24 @@ row = 1
 [[commands]]
 name = " 📦 Update this system. I don't care.."
 description = "Update my system. I mean, why not? Just do it. You are not only allowed, you are encouraged to do so! Why you think it says root down there? Wait, you never updated a strangers system before?! Wat?!"
-command = "sudo apt update && sudo apt upgrade"
+command = "sudo dnf upgrade -y"
 auto_close_execution = false
 col = "C"
 row = 2
+
+[[commands]]
+name = "🦀 rustnet"
+description = "A modern, terminal-based network monitor written in Rust. (Source: github.com/domcyrus/rustnet)"
+command = "rustnet"
+col = "A"
+row = 3
+
+[[commands]]
+name = "⚽ golazo"
+description = "A CLI tool to keep up with football (soccer) scores and schedules. (Source: github.com/0xjuanma/golazo)"
+command = "golazo"
+col = "B"
+row = 3
 
 
 #[[commands]]

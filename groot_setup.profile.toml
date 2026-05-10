@@ -2,7 +2,7 @@
 # Installation scripts for Demo 1 and Demo 2 tools.
 
 # ┌─ Profile Settings ───────────────────────────────────────┐
-x = 2
+x = 3
 y = 1
 header_art = '''
 🛠️ Setup Center
@@ -12,9 +12,9 @@ header_art = '''
 # ┌─ Setup Commands ───────────────────────┐
 # └────────────────────────────────────────┘
 [[commands]]
-name = "📦 Install Demo 1 (APT)"
+name = "📦 Install Demo 1 (DNF)"
 description = "Installs packages for Demo 1: bastet, cmatrix, sl, moon-buggy, fortune, cowsay, fastfetch, etc."
-command = "sudo apt update && sudo apt install -y bastet cmatrix telnet bmon sl moon-buggy fortune-mod cowsay fastfetch curl"
+command = "sudo dnf install -y bastet cmatrix telnet bmon sl moon-buggy fortune-mod cowsay fastfetch curl"
 auto_close_execution = false
 col = "A"
 row = 0
@@ -25,4 +25,12 @@ description = "Installs Go-based tools for Demo 2: nachrichten, slides, and pomo
 command = "go install github.com/zMoooooritz/nachrichten@latest && go install github.com/maaslalani/slides@latest && go install github.com/Bahaaio/pomo@latest"
 auto_close_execution = false
 col = "B"
+row = 0
+
+[[commands]]
+name = "🦀 Install Demo 3 (Rust & Scripts)"
+description = "Installs rustnet via COPR and golazo via install script."
+command = "sudo dnf copr enable domcyrus/rustnet -y && sudo dnf install rustnet -y && curl -fsSL https://raw.githubusercontent.com/0xjuanma/golazo/main/scripts/install.sh | bash"
+auto_close_execution = false
+col = "C"
 row = 0
