@@ -29,8 +29,8 @@ row = 0
 
 [[commands]]
 name = "🦀 Install Demo 3 (Rust & Scripts)"
-description = "Installs rustnet via COPR and golazo via install script."
-command = "sudo dnf copr enable domcyrus/rustnet -y && sudo dnf install rustnet -y && curl -fsSL https://raw.githubusercontent.com/0xjuanma/golazo/main/scripts/install.sh | bash"
+description = "Installs rustnet via COPR, golazo, and tabiew via install scripts."
+command = "sudo dnf copr enable domcyrus/rustnet -y && sudo dnf install rustnet -y && curl -fsSL https://raw.githubusercontent.com/0xjuanma/golazo/main/scripts/install.sh | bash && curl -sS https://raw.githubusercontent.com/shshemi/tabiew/main/install.sh | sh"
 auto_close_execution = false
 col = "C"
 row = 0

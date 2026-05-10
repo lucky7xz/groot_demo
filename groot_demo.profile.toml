@@ -5,7 +5,13 @@ x = 3
 y = 4
 header_art = '''
 🧊 Glassroot Access
+
+- Here's are some of my favorite TUIs. Try them out!
+- Use 'e' for explain, 'q' to exit, enter to start a TUI. 
+
+P.S. You have root. Do what you wanna do (or can...).
 '''
+assets = ["synth_data.csv"]
 
 #==========================================
 # ┌─ Column 0: Oldschool Visuals ──────────┐
@@ -97,6 +103,13 @@ name = "⚽ golazo"
 description = "A CLI tool to keep up with football (soccer) scores and schedules. (Source: github.com/0xjuanma/golazo)"
 command = "golazo"
 col = "B"
+row = 3
+
+[[commands]]
+name = "📑 tabiew"
+description = "A lightweight TUI to view and query CSV/TSV files. (Source: github.com/shshemi/tabiew)"
+command = "tw assets/groot_demo/data.csv"
+col = "C"
 row = 3
 
 
