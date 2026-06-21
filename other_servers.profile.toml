@@ -1,0 +1,49 @@
+# dR4ko - Glassroot Setup Profile
+# Installation scripts for Demo 1 and Demo 2 tools.
+
+# ┌─ Profile Settings ───────────────────────────────────────┐
+x = 2
+y = 3
+
+#==========================================
+# ┌─ Setup Commands ───────────────────────┐
+# └────────────────────────────────────────┘
+[[commands]]
+name = "Tunnel to terminal.shop"
+description = "Use this machine to connect to terminal.shop. If you live in the US, you can buy coffee there. \n Note: press 'r' to switch regions."
+command = "ssh terminal.shop"
+auto_close_execution = false
+col = "A"
+row = 0
+
+[[commands]]
+name = "Tunnel to Soft-Serve Demo"
+description = "Charm's terminal based git server demo. "
+command = "ssh git.charm.sh"
+auto_close_execution = false
+col = "A"
+row = 1
+
+[[commands]]
+name = "Tunnel to something scary"
+description = "The more you know..."
+command = "ssh whoami.filippo.io"
+auto_close_execution = false
+col = "B"
+row = 0
+
+[[commands]]
+name = "Tunnel to >> Level 0 <<, "
+description = "Check out overthewire.org. --> pw : bandit0"
+command = "ssh bandit0@bandit.labs.overthewire.org -p 2220"
+auto_close_execution = false
+col = "B"
+row = 1
+
+[[commands]]
+name = "Tunnel to >> Level 1 <<, "
+description = "Check out overthewire.org. -->find the pw on level0"
+command = "ssh bandit1@bandit.labs.overthewire.org -p 2220"
+auto_close_execution = false
+col = "B"
+row = 2
